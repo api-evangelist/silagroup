@@ -1,8 +1,25 @@
 aid: silagroup
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/silagroup.png
 name: Silagroup
-description: 'Silagroup is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'SILA is a next-generation business services and real estate platform based in India,
+  backed by Norwest Venture Partners. It delivers strategic solutions across Facility Management,
+  Material Handling Services, Food & Catering, Real Estate Advisory, and Real Estate Development,
+  supporting corporate entities, real estate funds, landowners, and developers throughout the entire
+  real estate lifecycle. SILA runs a WordPress-based corporate website (silagroup.co.in) and publishes
+  no public developer API surface; the only exposed HTTP API is the internal WordPress REST (wp-json)
+  endpoint used to render the CMS. Enrichment confirmed no OpenAPI/AsyncAPI, no /.well-known discovery
+  documents, and no developer portal, SDKs, or docs as of this pass.'
 url: https://raw.githubusercontent.com/api-evangelist/silagroup/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Unknown
+- Business Services
+- Real Estate
+- Facility Management
+- Material Handling
+- Food & Catering
+- Real Estate Advisory
+- Real Estate Development
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/silagroup-domain-security.yml
 - type: Website
   url: https://silagroup.co.in
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
